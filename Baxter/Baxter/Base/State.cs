@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Baxter
+namespace Baxter.Base
 {
-    public class Construct
+    public abstract class State : Construct
     {
     }
 }
