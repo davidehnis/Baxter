@@ -11,5 +11,13 @@ namespace Baxter.Tests
         {
             var response = await Baxter.Start(Commands.Tests.Initial);
         }
+
+        [TestMethod]
+        public void BasicTest()
+        {
+            var context = ContextFactory.Create(Baxter);
+            var command = Console.ReadLine();
+
+        }
     }
 }
