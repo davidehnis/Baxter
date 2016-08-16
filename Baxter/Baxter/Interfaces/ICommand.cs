@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Baxter.Interfaces
 {
-    public interface IContext : IConstruct
+    public interface ICommand : IConstruct
     {
-        IUser User { get; }
+
     }
 }
