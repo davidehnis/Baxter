@@ -8,13 +8,15 @@ using System.Threading.Tasks;
 
 namespace Baxter.Persistence
 {
-    public sealed class Inclass
+    public sealed class Inclass : IDisposable
     {
         private static Inclass instance = null;
         private static readonly object padlock = new object();
 
         Inclass()
         {
+            Connection = new SQLiteConnection("Data Source =:memory:; Version = 3; New = True; DateTimeFormat = Ticks");
+            Connection.Open();
         }
 
         public static Inclass Instance
@@ -34,25 +36,28 @@ namespace Baxter.Persistence
 
         public void Go()
         {
-            Connection = new SQLiteConnection("Data Source =:memory:; Version = 3; New = True; DateTimeFormat = Ticks");
-            Connection.Open();
+            
         }
 
-        public IDbConnection Connection { get; set; }
+        public SQLiteConnection Connection { get; set; }
 
         public void CreateTable()
         {
             string sql = "create table highscores (name varchar(20), score int)";
 
-            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteCommand command = new SQLiteCommand(sql, Connection);
             command.ExecuteNonQuery();
 
             sql = "insert into highscores (name, score) values ('Me', 9001)";
 
-            command = new SQLiteCommand(sql, m_dbConnection);
+            command = new SQLiteCommand(sql, Connection);
             command.ExecuteNonQuery();
 
         }
 
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
