@@ -122,11 +122,16 @@
     <Compile Include="Base\State.cs" />
     <Compile Include="Base\Transport.cs" />
     <Compile Include="Base\Construct.cs" />
-    <Compile Include="Basic\IState.cs" />
+    <Compile Include="Interfaces\IGroup.cs" />
+    <Compile Include="Interfaces\IRule.cs" />
+    <Compile Include="Interfaces\IState.cs" />
     <Compile Include="Basic\PersonalIdentification.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
     <Compile Include="Interfaces\IConstruct.cs" />
     <Compile Include="Interfaces\IContext.cs" />
+    <Compile Include="Interfaces\IHelp.cs" />
     <Compile Include="Interfaces\IResponse.cs" />
+    <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Baxter.rd.xml" />
   </ItemGroup>

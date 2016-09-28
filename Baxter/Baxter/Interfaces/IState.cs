@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Baxter.Basic
 {
-    public interface IState
+    public interface IState : IConstruct
     {
-        Guid Id { get; }
-
         string Name { get; }
 
         string Description { get; }

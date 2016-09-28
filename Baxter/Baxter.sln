@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baxter", "Baxter\Baxter.csproj", "{BDEAEC39-E8EB-4F7C-9093-31782E9336AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baxter.Tests", "Baxter.Tests\Baxter.Tests.csproj", "{48C05181-4421-4FF9-9DE3-C28A0AD5F70C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baxter.Persistence", "Baxter.Persistence\Baxter.Persistence.csproj", "{69EF0C58-A337-450F-AC3C-DD5B442717FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,22 @@ Global
 		{48C05181-4421-4FF9-9DE3-C28A0AD5F70C}.Release|x86.ActiveCfg = Release|x86
 		{48C05181-4421-4FF9-9DE3-C28A0AD5F70C}.Release|x86.Build.0 = Release|x86
 		{48C05181-4421-4FF9-9DE3-C28A0AD5F70C}.Release|x86.Deploy.0 = Release|x86
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Debug|ARM.Build.0 = Debug|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Debug|x64.Build.0 = Debug|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Debug|x86.Build.0 = Debug|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Release|ARM.ActiveCfg = Release|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Release|ARM.Build.0 = Release|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Release|x64.ActiveCfg = Release|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Release|x64.Build.0 = Release|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Release|x86.ActiveCfg = Release|Any CPU
+		{69EF0C58-A337-450F-AC3C-DD5B442717FF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

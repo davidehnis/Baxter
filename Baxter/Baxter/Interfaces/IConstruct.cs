@@ -8,18 +8,24 @@ namespace Baxter.Interfaces
 {
     public interface IConstruct
     {
-        IResponse Deploy();
+        Guid Id { get; }
 
         IResponse Execute(IContext context, ICommand command);
 
         IResponse Initialize();
 
-        IResponse Cost();
+        bool IsValid();
 
-        IResponse Changes();
+        bool HasAccess(IContext context);
 
-        IResponse Features();
+        IResponse Create();
 
-        IResponse Stats();
+        IHelp  Help { get; }
+
+        IGroup<IRule> Rules { get; }
+         
+        IGroup<IContext> Contexts { get; }
+
+        IGroup<ICommand> Commands { get; }
     }
 }
