@@ -7,8 +7,13 @@ using System.Threading.Tasks;
 
 namespace Baxter.Core.Types
 {
-    public class Test
+    public class Test : Instance
     {
+        public Test(Instance x)
+        {
+
+        }
+
         public static Datum A()
         {
             return null;
