@@ -9,7 +9,7 @@ namespace Baxter.Core.Types
 {
     public class Kind : ISerializable
     {
-        protected 
+        protected static Dictionary<Kind, Instance> _kinds = new Dictionary<Kind, Instance>();
 
         public static Type KindOf(Kind kind)
         {

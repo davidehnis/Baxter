@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applied\Convert.cs" />
     <Compile Include="Applied\Parameters.cs" />
     <Compile Include="Applied\Scenerio.cs" />
     <Compile Include="Constructs\Culture.cs" />
@@ -47,6 +48,7 @@
     <Compile Include="Types\Bucket.cs" />
     <Compile Include="Types\Instance.cs" />
     <Compile Include="Applied\Parameter.cs" />
+    <Compile Include="Types\Streamit.cs" />
     <Compile Include="Validation\Check.cs" />
     <Compile Include="Test\TestContext.cs" />
     <Compile Include="Types\Construct.cs" />
